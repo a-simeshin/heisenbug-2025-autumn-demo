@@ -1,0 +1,17 @@
+spring:
+  ai:
+    openai:
+      base-url: https://openrouter.ai/api
+      api-key: <ваш_токен>
+      chat:
+        options:
+          model: qwen/qwen3-235b-a22b:free
+
+logging:
+  level:
+    org:
+      springframework:
+        ai:
+          chat:
+            client:
+              advisor.SimpleLoggerAdvisor: debug

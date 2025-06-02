@@ -1,0 +1,19 @@
+spring:
+  ai:
+    gigachat:
+      scope: GIGACHAT_API_PERS
+      client-id: <ваш_client_id>
+      client-secret: <ваш_client_secret>
+      unsafe-ssl: true
+      chat:
+        options:
+          model: GigaChat-2-Max
+
+logging:
+  level:
+    org:
+      springframework:
+        ai:
+          chat:
+            client:
+              advisor.SimpleLoggerAdvisor: debug
